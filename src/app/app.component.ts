@@ -4,7 +4,19 @@ import { Users } from './users';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  
+  styles:[`
+    .selected {
+      background-color: #ccc !important;
+      color: white;
+    }
+    .dev{
+        width: 150px;
+    }
+    .dev .spanbackground{
+        width: 50px;
+    }
+  `]
   
 })
 export class AdminComponent {

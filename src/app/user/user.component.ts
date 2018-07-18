@@ -16,8 +16,9 @@ export class UserComponent implements OnInit {
 
   changeColors(event)
   {
-    console.log(event);
-    this.doChangeColors.emit("Hello");
+    let element = document.querySelector('.panel-body').classList;
+    element.toggle('backcolor');
+    this.doChangeColors.emit("Hello....");
 
   }
   ngOnInit() {
